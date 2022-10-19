@@ -25,7 +25,7 @@ Or **try Reading Club immediately** with **[readingclub.dev/editor](https://read
 
 Once you download the executable files on a folder of your choosing (e.g., `./tutorial/`), you need to create the `./tutorial/images/` folder.
 
-:::caution Add at least 1 example illustration to the `images` folder
+:::caution Add at least 1 example illustration to the images folder
 
 Make sure you add at least one image to the folder, even if you won't use it right away. Otherwise, the parser will throw an error at the moment of creating the zip file.
 
@@ -61,18 +61,46 @@ The `specials` object is optional. Leave it empty for now. It is used to avoid r
 
 ### `input.tex`
 
-First things first, we must add the basic structure of `input.tex`.
+First things first, we must add the basic structure of `input.tex`:
+
+- **Types**: These are the customizable types in the story, e.g., main character's name or location.
+- **Prompts**: For every customizable type, there must be a prompt, e.g, "Where does this story take place?"
+- **Info**: Helper information or instructions that explain the question and possible answers.
+- **Pronouns**: Each special type may ask the user for pronouns, or not.
+- **Dropdown**: It is possible to restrict the answers to an specific set of options separated by a dash.
+
+There follows an snippet that illustrates these concepts:
 
 ```latex title="input.tex"
-{
-  "meta": {
-    "id": "DragonStory",
-    "title": "The Great Dragon",
-    "author": "Ruth S. Gannett",
-    "input": "input.tex"
-  },
-  "specials": {}
-}
+\begin{types}
+    \item mainCharacter
+    \item fathersName
+    \item place
+\end{types}
+
+\begin{prompts}
+    \item Who is the main character?
+    \item What is this person's name?
+    \item Where did this person grow up?
+\end{prompts}
+
+\begin{info}
+    \item (e.g., father, mother, aunt, uncle)
+    \item (e.g., Elmer, Maria, etc.)
+    \item (e.g., London, Florida, etc.)
+\end{info}
+
+\begin{pronouns}
+    \item true
+    \item false
+    \item false
+\end{pronouns}
+
+\begin{dropdown}
+    \item father-mother-aunt-uncle
+    \item
+    \item
+\end{dropdown}
 ```
 
 The classic template will automatically be added to your project after you run the command:
