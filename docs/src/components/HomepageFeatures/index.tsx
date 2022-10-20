@@ -2,17 +2,20 @@ import React from "react";
 import clsx from "clsx";
 import styles from "./styles.module.css";
 
+import LiteYouTubeEmbed from "react-lite-youtube-embed";
+
 type FeatureItem = {
   title: string;
   // Svg: React.ComponentType<React.ComponentProps<"svg">>;
-  img: string;
+  src: string;
   description: JSX.Element;
+  video: boolean;
 };
 
 const FeatureList: FeatureItem[] = [
   {
     title: "Customize Stories",
-    img: require("@site/static/img/the-reading-club-customize-stories.JPG")
+    src: require("@site/static/img/the-reading-club-customize-stories.JPG")
       .default,
     description: (
       <>
@@ -27,10 +30,11 @@ const FeatureList: FeatureItem[] = [
         opportunity to create fun memories with your children! */}
       </>
     ),
+    video: false,
   },
   {
     title: "Self Publish",
-    img: require("@site/static/img/The-Reading-Club-Self-Publish-Library-Share-With-Others.png")
+    src: require("@site/static/img/The-Reading-Club-Self-Publish-Library-Share-With-Others.png")
       .default,
     description: (
       <>
@@ -39,10 +43,11 @@ const FeatureList: FeatureItem[] = [
         Upload stories to your private library or share with others.
       </>
     ),
+    video: false,
   },
   {
     title: "Be Creative",
-    img: require("@site/static/img/The-Reading-Club-Interactive-Reading-App-Screenshot-Reading-Interface.jpg")
+    src: require("@site/static/img/The-Reading-Club-Interactive-Reading-App-Screenshot-Reading-Interface.jpg")
       .default,
     description: (
       <>
@@ -50,17 +55,52 @@ const FeatureList: FeatureItem[] = [
         children!
       </>
     ),
+    video: false,
+  },
+  {
+    title: "",
+    src: "https://www.youtube.com/embed/KmM_1C2kVF4",
+    description: <></>,
+    video: true,
   },
 ];
 
-function Feature({ title, img, description }: FeatureItem) {
-  return (
+function Feature({ title, src, description, video }: FeatureItem) {
+  return video ? (
+    <div className={clsx("col col--12")}>
+      <div className="text--center">
+        {/* <Svg className={styles.featureSvg} role="img" /> */}
+        {/* Will reuse styles.featureSvg but will change to image tag */}
+        {/* <img src={src} className={styles.featureImg} /> */}
+        <iframe
+          className={styles.featureVid}
+          src="https://www.youtube.com/embed/KmM_1C2kVF4"
+          title="YouTube video player"
+          // frameBorder="0"
+          // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+        {/* <LiteYouTubeEmbed
+          id="_An9EsKPhp0"
+          // params="autoplay=1&autohide=1&showinfo=0&rel=0"
+          title="Explain Like I'm 5: Docusaurus"
+          // poster="maxresdefault"
+          // webp
+        /> */}
+      </div>
+      <div className="text--center padding-horiz--md">
+        <h3>{title}</h3>
+        <p>{description}</p>
+      </div>
+    </div>
+  ) : (
     <div className={clsx("col col--4")}>
       <div className="text--center">
         {/* <Svg className={styles.featureSvg} role="img" /> */}
         {/* Will reuse styles.featureSvg but will change to image tag */}
-        <img src={img} className={styles.featureImg} />
+        <img src={src} className={styles.featureImg} />
       </div>
+
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
         <p>{description}</p>
@@ -82,3 +122,7 @@ export default function HomepageFeatures(): JSX.Element {
     </section>
   );
 }
+
+// HomepageFeatures.defaultProps = {
+//   FeatureList: FeatureList,
+// };

@@ -6,7 +6,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "The Reading Club's Story Parser",
+  title: "Reading Club's Story Editor",
   tagline: "Write Your Own Customizable Stories",
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/",
@@ -37,14 +37,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+            "https://github.com/The-Reading-Club/story-editor-parser/tree/main/docs",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          //   editUrl:
+          //     "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -71,7 +71,12 @@ const config = {
           },
           { to: "/blog", label: "Blog", position: "left" },
           {
-            href: "https://github.com/The-Reading-Club",
+            href: "https://readingclub.canny.io/feature-requests",
+            label: "Feature Requests & Feedback",
+            position: "left",
+          },
+          {
+            href: "https://github.com/The-Reading-Club/story-editor-parser/",
             label: "GitHub",
             position: "right",
           },
@@ -96,6 +101,10 @@ const config = {
                 label: "YouTube",
                 href: "https://www.youtube.com/channel/UCOdDNB2J-v4zxwO81uoLf4w",
               },
+              {
+                label: "Feature Requets & Feedback",
+                href: "https://readingclub.canny.io/feature-requests",
+              },
               // {
               //   label: "Stack Overflow",
               //   href: "https://stackoverflow.com/questions/tagged/docusaurus",
@@ -119,7 +128,7 @@ const config = {
               },
               {
                 label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                href: "https://github.com/The-Reading-Club/story-editor-parser/",
               },
             ],
           },
