@@ -292,3 +292,19 @@ To upload the zip file to your library, run `submit.exe` in the same way you ran
 If the submission is successful, you will see a message like this one:
 
 <img src={useBaseUrl('img/Submission-Successful-Customizable-Story-Reading-Club.png')} />
+
+## Have feedback?
+
+You can **request features and leave feedback** [here](https://readingclub.canny.io/feature-requests).
+
+You can also subscribe to our channel and leave a comment on our video tutorial.
+
+<iframe
+  width="100%"
+  height="400px"
+  src="https://www.youtube.com/embed/KmM_1C2kVF4"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+></iframe>
