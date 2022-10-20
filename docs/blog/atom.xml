@@ -2,16 +2,16 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://your-docusaurus-test-site.com/blog</id>
     <title>Reading Club's Story Editor Blog</title>
-    <updated>2019-05-28T00:00:00.000Z</updated>
+    <updated>2022-10-20T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://your-docusaurus-test-site.com/blog"/>
     <subtitle>Reading Club's Story Editor Blog</subtitle>
     <icon>https://your-docusaurus-test-site.com/img/logo.jpg</icon>
     <entry>
         <title type="html"><![CDATA[Check Out Our Tutorial On YouTube!]]></title>
-        <id>first-blog-post</id>
-        <link href="https://your-docusaurus-test-site.com/blog/first-blog-post"/>
-        <updated>2019-05-28T00:00:00.000Z</updated>
+        <id>reading-club-story-editor-youtube-tutorial-write-your-own-children-books</id>
+        <link href="https://your-docusaurus-test-site.com/blog/reading-club-story-editor-youtube-tutorial-write-your-own-children-books"/>
+        <updated>2022-10-20T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[If the default set of customization options of the stories in our library is not enough for you, you can write your own custom stories with our state-of-the-art parser and upload them to your own private library. If you follow the simple instructions and tutorial, our software will allow you to make pronouns, characters, locations -- and more -- customizable within the app as well. This will be a great opportunity to create fun memories with your children!]]></summary>
         <content type="html"><![CDATA[<p>If the default set of customization options of the stories in our library is not enough for you, you can write your own custom stories with our state-of-the-art parser and upload them to your own private library. If you follow the simple instructions and tutorial, our software will allow you to make pronouns, characters, locations -- and more -- customizable within the app as well. This will be a great opportunity to create fun memories with your children!</p><iframe width="100%" height="400px" src="https://www.youtube.com/embed/KmM_1C2kVF4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe><p>I also invite you to watch the demo of the mobile app.</p><iframe width="100%" height="400px" src="https://www.youtube.com/embed/bxUTqEgbNVM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe><p>Download on iOS test flight and Google Play.</p><ul><li><a href="https://testflight.apple.com/join/OGNZivve" target="_blank" rel="noopener noreferrer">https://testflight.apple.com/join/OGNZivve</a></li><li><a href="https://play.google.com/store/apps/details?id=com.TheReadingClub.TheReadingClub" target="_blank" rel="noopener noreferrer">https://play.google.com/store/apps/details?id=com.TheReadingClub.TheReadingClub</a></li></ul>]]></content>
         <author>
